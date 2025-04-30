@@ -1,3 +1,53 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #1a1a1a;
+}
+
+/* Logo Container Styles */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: visible;
+  width: 240px;
+  height: 120px;
+  transition: transform 0.3s ease;
+}
+
+.logo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+/* Hover effect */
+.logo-container:hover {
+  transform: scale(1.05);
+}
+
+/* Optional animation for the logo */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.logo-container {
+  animation: float 4s ease-in-out infinite;
+}
+
 /* Navbar styles */
 .navbar-wrapper {
   display: flex;
