@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Navbar.css";
 import lightThemeIcon from "../../assets/lightmode.svg";
 import darkThemeIcon from "../../assets/darkmode.svg";
@@ -11,35 +11,77 @@ interface NavbarProps {
 export default function Navbar({ onThemeToggle }: NavbarProps) {
   const [activeItem, setActiveItem] = useState("");
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  // Handle window resize
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+      // Close mobile menu if screen is resized to desktop
+      if (window.innerWidth > 768) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Toggle mobile menu
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const isMobile = windowWidth <= 768;
 
   return (
     <>
       <header className="header">
         <div className="logo-container">
-          <img src={logoImage} />
+          <img src={logoImage} alt="Logo" />
         </div>
         <div className="navbar-wrapper">
-          <nav className="navbar-container">
-            <div className="nav-items">
+          <nav className={`navbar-container ${isMenuOpen ? "menu-open" : ""}`}>
+            {isMobile && (
+              <button className="hamburger-menu" onClick={toggleMenu}>
+                <span
+                  className={`hamburger-icon ${isMenuOpen ? "open" : ""}`}
+                ></span>
+              </button>
+            )}
+            <div className={`nav-items ${isMenuOpen ? "show" : ""}`}>
               <NavItem
                 label="Projects"
                 active={activeItem === "projects"}
-                onClick={() => setActiveItem("projects")}
+                onClick={() => {
+                  setActiveItem("projects");
+                  if (isMobile) setIsMenuOpen(false);
+                }}
               />
               <NavItem
                 label="About"
                 active={activeItem === "about"}
-                onClick={() => setActiveItem("about")}
+                onClick={() => {
+                  setActiveItem("about");
+                  if (isMobile) setIsMenuOpen(false);
+                }}
               />
               <NavItem
                 label="Blog"
                 active={activeItem === "blog"}
-                onClick={() => setActiveItem("blog")}
+                onClick={() => {
+                  setActiveItem("blog");
+                  if (isMobile) setIsMenuOpen(false);
+                }}
               />
               <NavItem
                 label="Contact"
                 active={activeItem === "contact"}
-                onClick={() => setActiveItem("contact")}
+                onClick={() => {
+                  setActiveItem("contact");
+                  if (isMobile) setIsMenuOpen(false);
+                }}
               />
             </div>
             <button
