@@ -31,28 +31,6 @@ header {
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
-/* Hover effect */
-.logo-container:hover {
-  transform: scale(1.05);
-}
-
-/* Optional animation for the logo */
-@keyframes float {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-.logo-container {
-  animation: float 4s ease-in-out infinite;
-}
-
 /* Navbar styles */
 .navbar-wrapper {
   display: flex;
@@ -71,6 +49,12 @@ header {
   background-color: #606060;
   border-radius: 50px;
   color: #f1f1f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar-container:hover {
+  background-color: #707070;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .nav-items {

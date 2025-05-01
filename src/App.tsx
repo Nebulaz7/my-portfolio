@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Navbar from "./Components/layout/Navbar";
 import Aurora from "./Components/bits/Aurora";
+import HeadContent from "./Components/headContent";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -19,10 +20,7 @@ function App() {
         speed={0.5}
       />
       <Navbar onThemeToggle={toggleTheme} />
-      <div className="content">
-        <h1>Welcome to My Portfolio</h1>
-        <p>This is a sample portfolio page.</p>
-      </div>
+      <HeadContent />
     </div>
   );
 }
