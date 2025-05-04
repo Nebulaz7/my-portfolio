@@ -10,7 +10,7 @@ interface NavbarProps {
 
 export default function Navbar({ onThemeToggle }: NavbarProps) {
   const [activeItem, setActiveItem] = useState("");
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 

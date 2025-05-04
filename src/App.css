@@ -2,14 +2,27 @@
   margin: 0;
   padding: 0;
   transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .light-mode {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: transparent;
+  color: #f1f1f1;
 }
 
 .dark-mode {
   background-color: transparent;
   color: #f1f1f1;
+}
+.headText {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  height: 15vh;
+}
+
+@media (max-width: 768px) {
+  .headText {
+    text-align: center;
+  }
 }

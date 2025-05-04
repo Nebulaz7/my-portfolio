@@ -13,14 +13,17 @@ function App() {
 
   return (
     <div className={`body ${isDarkMode ? "dark-mode" : "light-mode"}`}>
-      <Aurora
-        colorStops={["#00D8FF", "#7CFF67", "#00D8FF"]}
-        blend={0.87}
-        amplitude={1.0}
-        speed={0.5}
-      />
-      <Navbar onThemeToggle={toggleTheme} />
-      <HeadContent />
+      <div className="headText">
+        <Aurora
+          colorStops={["#af40ff", "#5b42f3", "#00ddeb"]}
+          //  #af40ff, #5b42f3 50%, #00ddeb
+          blend={0.87}
+          amplitude={1.0}
+          speed={0.5}
+        />
+        <Navbar onThemeToggle={toggleTheme} />
+        <HeadContent />
+      </div>
     </div>
   );
 }

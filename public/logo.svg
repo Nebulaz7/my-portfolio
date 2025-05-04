@@ -1,0 +1,12 @@
+<svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Letter 'J' with rounded corners -->
+  <path d="M30 20 C30 20, 60 20, 60 20 C60 20, 60 60, 60 60 C60 70, 50 80, 40 80 C30 80, 20 70, 20 60" 
+        fill="none" 
+        stroke="white" 
+        stroke-width="4" 
+        stroke-linecap="round" />
+  
+  <!-- Text "Joshua Peters" -->
+  <text x="80" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">Joshua</text>
+  <text x="80" y="60" font-family="Arial, sans-serif" font-size="16" fill="white">Peters</text>
+</svg>
