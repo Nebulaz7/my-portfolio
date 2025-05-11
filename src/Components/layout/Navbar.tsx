@@ -11,29 +11,17 @@ interface NavbarProps {
 export default function Navbar({ onThemeToggle }: NavbarProps) {
   const [activeItem, setActiveItem] = useState("");
   const [isDarkMode, setIsDarkMode] = useState(true);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   // Handle window resize
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
-      // Close mobile menu if screen is resized to desktop
-      if (window.innerWidth > 768) {
-        setIsMenuOpen(false);
-      }
     };
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  // Toggle mobile menu
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const isMobile = windowWidth <= 768;
 
   return (
     <>
@@ -42,45 +30,48 @@ export default function Navbar({ onThemeToggle }: NavbarProps) {
           <img src={logoImage} alt="Logo" />
         </div>
         <div className="navbar-wrapper">
-          <nav className={`navbar-container ${isMenuOpen ? "menu-open" : ""}`}>
-            {isMobile && (
-              <button className="hamburger-menu" onClick={toggleMenu}>
-                <span
-                  className={`hamburger-icon ${isMenuOpen ? "open" : ""}`}
-                ></span>
-              </button>
-            )}
-            <div className={`nav-items ${isMenuOpen ? "show" : ""}`}>
+          <nav className="navbar-container">
+            <div className="nav-items">
               <NavItem
                 label="Projects"
                 active={activeItem === "projects"}
+                href="#projects"
                 onClick={() => {
                   setActiveItem("projects");
-                  if (isMobile) setIsMenuOpen(false);
+                  // Scroll to the projects section when clicked
+                  document.getElementById('projects')?.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                  });
                 }}
               />
+               <NavItem
+                label="Technologies"
+                active={activeItem === "Technologies"}
+                href="#technologies"
+                onClick={() => {
+                  setActiveItem("technologies");
+                  document.getElementById('technologies')?.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                  });
+                }}
+              />
+              
               <NavItem
                 label="About"
                 active={activeItem === "about"}
+                href="#about"
                 onClick={() => {
                   setActiveItem("about");
-                  if (isMobile) setIsMenuOpen(false);
-                }}
-              />
-              <NavItem
-                label="Blog"
-                active={activeItem === "blog"}
-                onClick={() => {
-                  setActiveItem("blog");
-                  if (isMobile) setIsMenuOpen(false);
                 }}
               />
               <NavItem
                 label="Contact"
                 active={activeItem === "contact"}
+                href="#contact"
                 onClick={() => {
                   setActiveItem("contact");
-                  if (isMobile) setIsMenuOpen(false);
                 }}
               />
             </div>
@@ -107,9 +98,10 @@ interface NavItemProps {
   label: string;
   active: boolean;
   onClick: () => void;
+  href: string;
 }
 
-function NavItem({ label, active, onClick }: NavItemProps) {
+function NavItem({ label, active, onClick, href }: NavItemProps) {
   return (
     <button onClick={onClick} className={`nav-item ${active ? "active" : ""}`}>
       {label}
