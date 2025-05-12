@@ -7,7 +7,7 @@ import ProjectSection from "./Components/ProjectSection";
 import TechStack from "./Components/TechStack";
 import AboutSection from "./Components/AboutSection";
 import Footer from "./Components/layout/Footer";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
