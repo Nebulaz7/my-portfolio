@@ -5,6 +5,8 @@ import Aurora from "./Components/bits/Aurora";
 import HeadContent from "./Components/headContent";
 import ProjectSection from "./Components/ProjectSection";
 import TechStack from "./Components/TechStack";
+import AboutSection from "./Components/AboutSection";
+import Footer from "./Components/layout/Footer";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -29,11 +31,13 @@ function App() {
         // It includes a title, subtitle, and a button to view projects. 
         // The button has an onClick event handler that scrolls the page to the projects section. */}
         <HeadContent />
-        <TechStack />
         <div className="projects-section">
           <ProjectSection />
           {/* // ProjectSection is a React component that displays a list of projects.*/}
+          <TechStack />
+          <AboutSection />
         </div>
+        <Footer />
       </div>
     </div>
   );

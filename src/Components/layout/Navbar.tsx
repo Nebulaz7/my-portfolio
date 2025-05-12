@@ -64,6 +64,10 @@ export default function Navbar({ onThemeToggle }: NavbarProps) {
                 href="#about"
                 onClick={() => {
                   setActiveItem("about");
+                  document.getElementById('about')?.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                  });
                 }}
               />
               <NavItem
@@ -72,6 +76,10 @@ export default function Navbar({ onThemeToggle }: NavbarProps) {
                 href="#contact"
                 onClick={() => {
                   setActiveItem("contact");
+                  document.getElementById('contact')?.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                  });
                 }}
               />
             </div>
@@ -103,8 +111,11 @@ interface NavItemProps {
 
 function NavItem({ label, active, onClick, href }: NavItemProps) {
   return (
-    <button onClick={onClick} className={`nav-item ${active ? "active" : ""}`}>
+    <a href={href} onClick={(e) => {
+      e.preventDefault();
+      onClick();
+    }} className={`nav-item ${active ? "active" : ""}`}>
       {label}
-    </button>
+    </a>
   );
 }

@@ -2,8 +2,18 @@ import "./HeadContent.css";
 import Squares from "./bits/Squares";
 import DecryptedText from "./bits/DecryptedText";
 import CtaButton from "./bits/CtaButton";
+import { useState } from "react";
+
+
 
 const HeadContent = () => {
+  const scrollToAbout = () => {
+    document.getElementById('about')?.scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'start'
+    });
+  };
+
   return (
     <div className="head-content">
       <div className="cosmos-elements">
@@ -32,7 +42,7 @@ const HeadContent = () => {
           crafting beautiful and functional web experiences, I modern websites,
           landing pages and single-page web appications.
         </p>
-        <CtaButton text="Get to know me" />
+        <CtaButton text="Get to know me" onClick={scrollToAbout} />
       </div>
       <div className="intro-image">
         <Squares

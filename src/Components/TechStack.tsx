@@ -81,9 +81,9 @@ const TechStack = () => {
     },
     {
       id: 12,
-      name: "TensorFlow",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
-      color: "#FF6F00",
+      name: "Tailwind CSS",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+      color: "#38BDF8",
     },
   ];
 

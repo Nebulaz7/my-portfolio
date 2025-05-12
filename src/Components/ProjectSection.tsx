@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import "./ProjectSection.css";
 import DishPal from "../assets/dishpal-ai-img.png";
+import NebX from "../assets/neb-x-img.png";
+import NebAI from "../assets/neb-ai-img.png";
 
 interface Project {
   id: number;
@@ -28,20 +30,21 @@ const ProjectSection = () => {
     },
     {
       id: 2,
-      title: "Task Management App",
+      title: "Digital Wallet App",
       description: "Neb-x",
-      technologies: ["React", "TypeScript", "Firebase", "Redux"],
-      imageUrl: "https://images.unsplash.com/photo-1611224885990-ab7363d1f2a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1639&q=80",
-      githubUrl: "https://github.com/yourusername/task-manager",
+      technologies: ["HTMl", "CSS", "Javascript", "Bootstrap"],
+      imageUrl: NebX,
+      githubUrl: "https://github.com/Nebulaz7/neb-x",
+      liveUrl: "https://nebulaz7.github.io/neb-x",
     },
     {
       id: 3,
-      title: "Weather Dashboard",
+      title: "Neb AI Chatbot",
       description: "Real-time weather forecasting application with interactive maps and location tracking.",
-      technologies: ["React", "TypeScript", "OpenWeather API", "Leaflet"],
-      imageUrl: "https://images.unsplash.com/photo-1526743655626-e3d757b13cc3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
-      githubUrl: "https://github.com/yourusername/weather-app",
-      liveUrl: "https://weather-dashboard-app.vercel.app",
+      technologies: ["React", "TypeScript", "Gemini Ai API", "Tailwind"],
+      imageUrl: NebAI,
+      githubUrl: "https://github.com/Nebulaz7/chatbot",
+      liveUrl: "https://neb-ai.vercel.app/",
     },
   ];
 

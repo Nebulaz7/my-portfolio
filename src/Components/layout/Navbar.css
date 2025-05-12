@@ -103,6 +103,7 @@ header {
   cursor: pointer;
   padding: 5px;
   transition: color 0.2s ease, transform 0.2s ease;
+  text-decoration: none;
   position: relative;
 }
 
@@ -114,7 +115,7 @@ header {
 .nav-item.active {
   color: #ffffff;
 }
-
+ 
 .nav-item.active::after {
   content: '';
   position: absolute;

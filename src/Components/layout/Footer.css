@@ -1,0 +1,265 @@
+.footer-container {
+  position: relative;
+  background: #121212;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 80px 20px;
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(145deg, #0f1016, #1a1a24);
+  overflow: hidden;
+}
+
+/* Subtle cosmos background */
+.subtle-cosmos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 10% 20%, rgba(68, 45, 132, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(38, 38, 80, 0.1) 0%, transparent 40%);
+  opacity: 0.6;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.stars-subtle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.star-subtle {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.4;
+  animation: twinkle 4s infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.4; }
+}
+
+.contact-flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-heading {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.contact-heading.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-heading h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.contact-heading p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.email-display {
+  font-size: 1.1rem;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.email-display:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.contact-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.contact-links.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.contact-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.contact-link:hover {
+  transform: translateY(-5px);
+}
+
+.icon-container {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.contact-link:hover .icon-container {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+.contact-link svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+  transition: transform 0.3s ease;
+}
+
+.contact-link:hover svg {
+  transform: scale(1.1);
+}
+
+.contact-link span {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.contact-link:hover span {
+  opacity: 1;
+}
+
+.email-tooltip {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(55, 30, 140, 0.9);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  z-index: 1000;
+  animation: fadeInOut 2s ease forwards;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 15px rgba(128, 0, 255, 0.3);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translate(-50%, -20px); }
+  20% { opacity: 1; transform: translate(-50%, 0); }
+  80% { opacity: 1; transform: translate(-50%, 0); }
+  100% { opacity: 0; transform: translate(-50%, -20px); }
+}
+
+/* Main Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0a0a0a;
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.footer-text.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.footer-text .heart {
+  color: #ff4d4d;
+  display: inline-block;
+  animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .contact-flex-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .contact-heading {
+    text-align: center;
+  }
+  
+  .contact-links {
+    justify-content: center;
+  }
+  
+  .icon-container {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .contact-link svg {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .contact-heading h2 {
+    font-size: 2rem;
+  }
+}
