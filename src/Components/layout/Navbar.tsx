@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./Navbar.css";
 import lightThemeIcon from "../../assets/lightmode.svg";
 import darkThemeIcon from "../../assets/darkmode.svg";
