@@ -22,7 +22,7 @@ const ProjectSection = () => {
     {
       id: 1,
       title: "DishPal AI",
-      description: "A full-featured e-commerce platform with cart functionality and payment integration.",
+      description: "AI-powered recipe generator that creates dishes from your available ingredients. Features recipe saving and favorites.",
       technologies: ["React", "JavaScript", "OpenAI API", "CSS"],
       imageUrl: DishPal,
       githubUrl: "https://github.com/Nebulaz7/dishpal-ai",
@@ -39,8 +39,8 @@ const ProjectSection = () => {
     },
     {
       id: 3,
-      title: "Neb AI Chatbot",
-      description: "Real-time weather forecasting application with interactive maps and location tracking.",
+      title: "Neb AI",
+      description: "An AI-Powered chatbot, that is always helpful.",
       technologies: ["React", "TypeScript", "Gemini Ai API", "Tailwind"],
       imageUrl: NebAI,
       githubUrl: "https://github.com/Nebulaz7/chatbot",

@@ -1,15 +1,15 @@
- <svg 
-      width="16" 
-      height="16" 
-      viewBox="0 0 24 24" 
-      fill="none" 
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path 
-        d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" 
-        stroke="#f1f1f1" 
-        strokeWidth="2" 
-        strokeLinecap="round" 
-        strokeLinejoin="round"
-      />
-    </svg>
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Face circle -->
+  <circle cx="100" cy="100" r="90" fill="white" stroke="black" stroke-width="2"/>
+  
+  <!-- Left eye -->
+  <circle cx="65" cy="80" r="12" fill="white" stroke="black" stroke-width="2"/>
+  <circle cx="65" cy="80" r="6" fill="black"/>
+  
+  <!-- Right eye -->
+  <circle cx="135" cy="80" r="12" fill="white" stroke="black" stroke-width="2"/>
+  <circle cx="135" cy="80" r="6" fill="black"/>
+  
+  <!-- Smile -->
+  <path d="M50,110 Q100,160 150,110" fill="none" stroke="black" stroke-width="4" stroke-linecap="round"/>
+</svg>

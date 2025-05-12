@@ -30,7 +30,7 @@ const HeadContent = () => {
       <div className="intro-text">
         <h1 style={{ marginTop: "4rem" }}>
           <DecryptedText
-            text="Welcome to My Portfolio"
+            text="Welcome to My Personal Portfolio"
             speed={300}
             animateOn="view"
             revealDirection="center"
@@ -39,7 +39,7 @@ const HeadContent = () => {
         <p>
           Hi there, I'm Peters Joshua, I'm a
           <span className="highlight"> Front-End Developer</span> dedicated to
-          crafting beautiful and functional web experiences, I modern websites,
+          crafting beautiful and functional web experiences, I create modern websites,
           landing pages and single-page web appications.
         </p>
         <CtaButton text="Get to know me" onClick={scrollToAbout} />
