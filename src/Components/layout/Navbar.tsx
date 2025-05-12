@@ -11,17 +11,6 @@ interface NavbarProps {
 export default function Navbar({ onThemeToggle }: NavbarProps) {
   const [activeItem, setActiveItem] = useState("");
   const [isDarkMode, setIsDarkMode] = useState(true);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  // Handle window resize
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   return (
     <>

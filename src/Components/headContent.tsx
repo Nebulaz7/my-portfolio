@@ -2,7 +2,7 @@ import "./HeadContent.css";
 import Squares from "./bits/Squares";
 import DecryptedText from "./bits/DecryptedText";
 import CtaButton from "./bits/CtaButton";
-import { useState } from "react";
+
 
 
 
