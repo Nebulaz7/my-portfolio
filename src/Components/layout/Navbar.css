@@ -154,23 +154,29 @@ header {
 @media screen and (max-width: 768px) {
   header {
     height: auto;
-    padding: 10px;
+    padding: 10px 0 70px;
     flex-direction: column;
     position: relative;
-    display: absolute;
-    top: 0;
-    position: fixed;
+    display: block;
+    margin-bottom: 60px;
   }
 
   .logo-container {
     width: 140px;
     height: 60px;
-    margin-bottom: 10px;
+    margin: 0 auto 80px;
+    position: static;
+    display: flex;
+    justify-content: center;
   }
 
   .navbar-wrapper {
     width: 100%;
     padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
   }
 
   .navbar-container {
@@ -178,6 +184,8 @@ header {
     border-radius: 20px;
     padding: 15px 20px;
     position: relative;
+    margin: 0 auto;
+    width: 90%;
   }
 
   .nav-items {
