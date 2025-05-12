@@ -7,6 +7,7 @@ import ProjectSection from "./Components/ProjectSection";
 import TechStack from "./Components/TechStack";
 import AboutSection from "./Components/AboutSection";
 import Footer from "./Components/layout/Footer";
+import { Analytics } from "@vercel/analytics/next"
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -31,13 +32,12 @@ function App() {
         // It includes a title, subtitle, and a button to view projects. 
         // The button has an onClick event handler that scrolls the page to the projects section. */}
         <HeadContent />
-        <div className="projects-section">
           <ProjectSection />
           {/* // ProjectSection is a React component that displays a list of projects.*/}
           <TechStack />
           <AboutSection />
-        </div>
         <Footer />
+        <Analytics/>
       </div>
     </div>
   );
