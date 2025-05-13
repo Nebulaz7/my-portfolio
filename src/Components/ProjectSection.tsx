@@ -44,7 +44,7 @@ const ProjectSection = () => {
       technologies: ["React", "TypeScript", "Gemini Ai API", "Tailwind"],
       imageUrl: NebAI,
       githubUrl: "https://github.com/Nebulaz7/chatbot",
-      liveUrl: "https://neb-ai.vercel.app/",
+      liveUrl: "https://chatbot-eta-lime.vercel.app/",
     },
   ];
 
