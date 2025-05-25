@@ -92,7 +92,7 @@ const AboutSection: React.FC = () => {
             </h3>
             
             <p>
-                Hello, I'm Peters Joshua (NebulaZ7), my love for Web Development started when around 2021, when
+                Hello, I'm Peters Joshua (NebulaZ7), my love for Web Development started around 2021, when
                  I discovered that I could create a website with just a few lines of code using HTML, since then
                  I've been on a journey to learn more about the world of web development and other emerging technologies.
 
