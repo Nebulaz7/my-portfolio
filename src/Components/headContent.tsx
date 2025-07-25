@@ -3,6 +3,8 @@ import "./HeadContent.css";
 import DecryptedText from "./bits/DecryptedText";
 import CtaButton from "./bits/CtaButton";
 import Orb from "./bits/Orb";
+import DarkVeil from "./bits/DarkVeil";
+import Aurora from "./bits/Aurora";
 
 const HeadContent = () => {
   const scrollToAbout = () => {
@@ -14,6 +16,24 @@ const HeadContent = () => {
 
   return (
     <div className="head-content">
+      <div
+        className="overlay-background"
+        style={{
+          width: "100%",
+          height: "100vh",
+          position: "absolute",
+          top: 0,
+          left: 0,
+          zIndex: -2,
+        }}
+      >
+        <Aurora
+          colorStops={["#af40ff", "#5b42f3", "#00ddeb"]}
+          blend={0.87}
+          amplitude={1.0}
+          speed={0.5}
+        />
+      </div>
       <div className="cosmos-elements">
         <div className="star-small star-1"></div>
         <div className="star-small star-2"></div>
@@ -40,7 +60,9 @@ const HeadContent = () => {
           crafting beautiful and functional web experiences, I create modern
           websites, landing pages and single-page web appications.
         </p>
-        <CtaButton text="Get to know me" onClick={scrollToAbout} />
+        <div className="cta-button">
+          <CtaButton text="Get to know me" onClick={scrollToAbout} />
+        </div>
       </div>
       <div className="intro-image">
         <div style={{ width: "100%", height: "600px", position: "relative" }}>

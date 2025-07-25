@@ -64,7 +64,7 @@ header {
 }
 
 .navbar-container::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -50%;
   left: -50%;
@@ -115,9 +115,9 @@ header {
 .nav-item.active {
   color: #ffffff;
 }
- 
+
 .nav-item.active::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -154,20 +154,20 @@ header {
 @media screen and (max-width: 768px) {
   header {
     height: auto;
-    padding: 10px 0 70px;
+    padding: 0;
     flex-direction: column;
     position: relative;
     display: block;
-    margin-bottom: 60px;
+    margin-bottom: 0;
   }
 
   .logo-container {
-    width: 140px;
+    /* width: 140px;
     height: 60px;
     margin: 0 auto 80px;
     position: static;
-    display: flex;
-    justify-content: center;
+    justify-content: center; */
+    display: none;
   }
 
   .navbar-wrapper {

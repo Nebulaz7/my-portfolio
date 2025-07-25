@@ -7,7 +7,7 @@ import ProjectSection from "./Components/ProjectSection";
 import TechStack from "./Components/TechStack";
 import AboutSection from "./Components/AboutSection";
 import Footer from "./Components/layout/Footer";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -21,23 +21,23 @@ function App() {
       <div className="headText">
         {/* // Aurora is a React component that creates a beautiful aurora effect in the background. 
         // It uses a canvas element to draw the aurora.*/}
-        <Aurora
+        {/* <Aurora
           colorStops={["#af40ff", "#5b42f3", "#00ddeb"]}
           blend={0.87}
           amplitude={1.0}
           speed={0.5}
-        />
+        /> */}
         <Navbar onThemeToggle={toggleTheme} />
         {/* // HeadContent is a React component that displays the main content of the page. 
         // It includes a title, subtitle, and a button to view projects. 
         // The button has an onClick event handler that scrolls the page to the projects section. */}
         <HeadContent />
-          <ProjectSection />
-          {/* // ProjectSection is a React component that displays a list of projects.*/}
-          <TechStack />
-          <AboutSection />
+        <ProjectSection />
+        {/* // ProjectSection is a React component that displays a list of projects.*/}
+        <TechStack />
+        <AboutSection />
         <Footer />
-        <Analytics/>
+        <Analytics />
       </div>
     </div>
   );

@@ -7,7 +7,7 @@
   margin-top: 0;
   padding: 2rem;
   background-color: transparent;
-  height: 75vh;
+  height: 85vh;
   position: relative;
   overflow: hidden;
 }
@@ -126,6 +126,7 @@
 
 .head-content .intro-text {
   max-width: 600px;
+  padding-top: 10vh;
   margin-bottom: 2rem;
   position: relative;
   z-index: 1;
@@ -152,6 +153,7 @@
 }
 
 .head-content .intro-image {
+  padding-top: 10vh;
   position: relative;
   z-index: 1;
 }
@@ -226,8 +228,11 @@
   .head-content {
     flex-direction: column;
     text-align: center;
+    padding-top: 0;
   }
-
+  .intro-text {
+    text-align: left;
+  }
   .head-content h1 {
     font-size: 2rem; /* Smaller font size for mobile */
   }

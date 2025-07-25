@@ -46,8 +46,7 @@
 }
 @media (max-width: 768px) {
   .buttonio {
-    width: 80%;
-    margin: 1rem auto; /* Center the button with margin */
+    text-align: left;
   }
 
   .buttonio span {

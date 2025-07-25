@@ -28,34 +28,34 @@ export default function Navbar({ onThemeToggle }: NavbarProps) {
                 onClick={() => {
                   setActiveItem("projects");
                   // Scroll to the projects section when clicked
-                  document.getElementById('projects')?.scrollIntoView({ 
-                    behavior: 'smooth',
-                    block: 'start'
+                  document.getElementById("projects")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
                   });
                 }}
               />
-               <NavItem
+              <NavItem
                 label="Technologies"
                 active={activeItem === "Technologies"}
                 href="#technologies"
                 onClick={() => {
                   setActiveItem("technologies");
-                  document.getElementById('technologies')?.scrollIntoView({ 
-                    behavior: 'smooth',
-                    block: 'start'
+                  document.getElementById("technologies")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
                   });
                 }}
               />
-              
+
               <NavItem
                 label="About"
                 active={activeItem === "about"}
                 href="#about"
                 onClick={() => {
                   setActiveItem("about");
-                  document.getElementById('about')?.scrollIntoView({ 
-                    behavior: 'smooth',
-                    block: 'start'
+                  document.getElementById("about")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
                   });
                 }}
               />
@@ -65,9 +65,9 @@ export default function Navbar({ onThemeToggle }: NavbarProps) {
                 href="#contact"
                 onClick={() => {
                   setActiveItem("contact");
-                  document.getElementById('contact')?.scrollIntoView({ 
-                    behavior: 'smooth',
-                    block: 'start'
+                  document.getElementById("contact")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
                   });
                 }}
               />
@@ -100,10 +100,14 @@ interface NavItemProps {
 
 function NavItem({ label, active, onClick, href }: NavItemProps) {
   return (
-    <a href={href} onClick={(e) => {
-      e.preventDefault();
-      onClick();
-    }} className={`nav-item ${active ? "active" : ""}`}>
+    <a
+      href={href}
+      onClick={(e) => {
+        e.preventDefault();
+        onClick();
+      }}
+      className={`nav-item ${active ? "active" : ""}`}
+    >
       {label}
     </a>
   );
