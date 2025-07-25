@@ -3,7 +3,6 @@ import "./HeadContent.css";
 import DecryptedText from "./bits/DecryptedText";
 import CtaButton from "./bits/CtaButton";
 import Orb from "./bits/Orb";
-import DarkVeil from "./bits/DarkVeil";
 import Aurora from "./bits/Aurora";
 
 const HeadContent = () => {
