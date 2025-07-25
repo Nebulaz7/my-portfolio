@@ -81,9 +81,33 @@ const TechStack = () => {
     },
     {
       id: 12,
-      name: "Tailwind CSS",
+      name: "Tailwind",
       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
       color: "#38BDF8",
+    },
+    {
+      id: 13,
+      name: "Next.js",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+      color: "#000000",
+    },
+    {
+      id: 14,
+      name: "Supabase",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg",
+      color: "#3ECF8E",
+    },
+    {
+      id: 15,
+      name: "Python",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      color: "#3776AB",
+    },
+    {
+      id: 16,
+      name: "TensorFlow.js",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+      color: "#FF6F00",
     },
   ];
 
@@ -122,40 +146,49 @@ const TechStack = () => {
         <div className="star star4"></div>
         <div className="star star5"></div>
         <div className="comet"></div>
-      </div> 
-      
+      </div>
+
       <div className="section-title">
         <h2>Tech Stack</h2>
         <div className="title-underline"></div>
       </div>
-      
+
       <p className="tech-intro">
         Technologies and tools I work with to build digital experiences
       </p>
-      
+
       <div className="tech-grid">
         {techItems.map((tech, index) => (
           <div
             key={tech.id}
-            className={`tech-item ${visibleItems.includes(tech.id) ? "visible" : ""}`}
+            className={`tech-item ${
+              visibleItems.includes(tech.id) ? "visible" : ""
+            }`}
             ref={(el) => {
               techItemsRef.current[index] = el;
             }}
             data-id={tech.id}
-            style={{ 
+            style={{
               animationDelay: `${index * 0.1}s`,
-              boxShadow: visibleItems.includes(tech.id) ? `0 0 15px ${tech.color}33` : "none"
+              boxShadow: visibleItems.includes(tech.id)
+                ? `0 0 15px ${tech.color}33`
+                : "none",
             }}
           >
             <div className="tech-icon-wrapper">
               <img src={tech.icon} alt={tech.name} className="tech-icon" />
-              <div className="tech-glow" style={{ background: `radial-gradient(circle, ${tech.color}33 0%, transparent 70%)` }}></div>
+              <div
+                className="tech-glow"
+                style={{
+                  background: `radial-gradient(circle, ${tech.color}33 0%, transparent 70%)`,
+                }}
+              ></div>
             </div>
             <p className="tech-name">{tech.name}</p>
           </div>
         ))}
       </div>
-      
+
       <div className="orbit">
         <div className="orbit-circle"></div>
         <div className="orbit-planet"></div>
