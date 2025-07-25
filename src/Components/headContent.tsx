@@ -3,7 +3,7 @@ import "./HeadContent.css";
 import DecryptedText from "./bits/DecryptedText";
 import CtaButton from "./bits/CtaButton";
 import Orb from "./bits/Orb";
-import Aurora from "./bits/Aurora";
+import LightRays from "./bits/LightRays";
 
 const HeadContent = () => {
   const scrollToAbout = () => {
@@ -26,12 +26,19 @@ const HeadContent = () => {
           zIndex: -2,
         }}
       >
-        <Aurora
-          colorStops={["#af40ff", "#5b42f3", "#00ddeb"]}
-          blend={0.87}
-          amplitude={1.0}
-          speed={0.5}
+        <LightRays
+          raysOrigin="left"
+          raysColor="#5b42f3"
+          raysSpeed={1.5}
+          lightSpread={1.6}
+          rayLength={3}
+          followMouse={false}
+          mouseInfluence={0.1}
+          noiseAmount={0.1}
+          distortion={0.6}
+          className="custom-rays"
         />
+        {/* colors: "#af40ff", "#5b42f3", "#00ddeb" */}
       </div>
       <div className="cosmos-elements">
         <div className="star-small star-1"></div>
