@@ -39,8 +39,13 @@
 }
 
 @keyframes twinkle {
-  0%, 100% { opacity: 0.2; }
-  50% { opacity: 0.8; }
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.8;
+  }
 }
 
 .about-container {
@@ -116,19 +121,26 @@
 }
 
 .typewriter-text.typing {
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret 0.75s step-end infinite;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #af40ff }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #af40ff;
+  }
 }
 
 .about-description {
@@ -139,6 +151,7 @@
 
 .about-description p {
   margin-bottom: 15px;
+  text-align: left;
 }
 
 .about-skills {
