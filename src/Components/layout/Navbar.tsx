@@ -36,7 +36,7 @@ export default function Navbar({ onThemeToggle }: NavbarProps) {
               />
               <NavItem
                 label="Technologies"
-                active={activeItem === "Technologies"}
+                active={activeItem === "technologies"}
                 href="#technologies"
                 onClick={() => {
                   setActiveItem("technologies");
