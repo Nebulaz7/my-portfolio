@@ -19,6 +19,7 @@
   font-weight: 700;
   margin-bottom: 1rem;
   background: linear-gradient(90deg, #af40ff, #5b42f3, #00ddeb);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -70,7 +71,7 @@
 }
 
 .tech-item::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -50%;
   left: -50%;
@@ -212,7 +213,11 @@
   left: -10%;
   width: 100px;
   height: 2px;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8));
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.8)
+  );
   transform: rotate(15deg);
   animation: cometMove 12s linear infinite;
   opacity: 0;
@@ -314,16 +319,16 @@
     grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
     gap: 1.5rem;
   }
-  
+
   .tech-item {
     padding: 1rem;
   }
-  
+
   .tech-icon-wrapper {
     width: 45px;
     height: 45px;
   }
-  
+
   .section-title h2 {
     font-size: 2rem;
   }
