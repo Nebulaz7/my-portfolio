@@ -52,7 +52,10 @@ const HeadContent = () => {
       </div>
 
       <div className="intro-text">
-        <h1 style={{ marginTop: "4rem" }}>Welcome to My Personal Portfolio</h1>
+        <h1 className="hero-heading">
+          Hi there 👋, <br />
+          Welcome to My Portfolio
+        </h1>
         {/* <h1
           style={{ marginTop: "4rem" }}
           className="text-5xl text-red-500 lg:text-7xl font-light hero-font leading-tight mb-6"
@@ -60,10 +63,9 @@ const HeadContent = () => {
           Welcome 👋
         </h1> */}
         <p>
-          Hi there, I'm Peters Joshua, I'm a
-          <span className="highlight"> Front-End Developer</span> dedicated to
-          crafting beautiful and functional web experiences, I create modern
-          websites, landing pages and single-page web appications.
+          I'm <span className="highlight"> Peters Joshua </span>, I'm a
+          <span> Front-End Engineer</span> dedicated to crafting beautiful and
+          functional web experiences.
         </p>
         <div className="cta-button">
           <CtaButton text="Get to know me" onClick={scrollToAbout} />

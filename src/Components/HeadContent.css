@@ -12,6 +12,25 @@
   overflow: hidden;
 }
 
+/* Equivalent CSS for: text-5xl text-red-500 lg:text-7xl font-light hero-font leading-tight mb-6 */
+
+.hero-heading {
+  font-size: 3rem; /* text-5xl */
+  line-height: 1; /* text-5xl default line-height */
+  font-weight: 300; /* font-light */
+  font-family: "Poppins", sans-serif; /* hero-font (you'll need to define this font family) */
+  line-height: 1.25; /* leading-tight */
+  margin-bottom: 1.5rem; /* mb-6 */
+}
+
+/* Large screens (1024px and up) - equivalent to lg:text-7xl */
+@media (min-width: 1024px) {
+  .hero-heading {
+    font-size: 4.5rem; /* lg:text-7xl */
+    line-height: 1; /* text-7xl default line-height */
+  }
+}
+
 /* Cosmos Theme Elements */
 .cosmos-elements {
   position: absolute;
@@ -133,13 +152,13 @@
 }
 
 .head-content h1 {
-  font-size: 60px;
+  font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
 .head-content p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: lighter;
   line-height: 1.6;
   margin-bottom: 1rem;
@@ -147,13 +166,27 @@
 
 .head-content .highlight {
   font-weight: bold;
-  background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  background: radial-gradient(circle, #9810fa 0%, #7182ff 50%, #00ddeb 100%);
+  background-size: 200%;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent; /* fallback */
+  animation: textShine 3s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 .head-content .intro-image {
   /* padding-top: 10vh; */
+  margin-top: 4rem;
   position: relative;
   z-index: 1;
 }
@@ -234,11 +267,25 @@
     text-align: left;
   }
   .head-content h1 {
-    font-size: 2rem; /* Smaller font size for mobile */
+    margin-top: 0;
+    padding-bottom: 5px;
+    font-size: 2.5rem; /* Smaller font size for mobile */
   }
 
   .head-content p {
-    font-size: 1rem; /* Smaller font size for mobile */
+    font-size: 1.2rem; /* Smaller font size for mobile */
+    padding-bottom: 10px;
+  }
+
+  /* .cta-button {
+    /* align this to the center 
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  } */
+
+  .head-content {
+    height: 95vh;
   }
 
   .head-content .intro-text {
