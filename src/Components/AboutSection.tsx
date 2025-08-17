@@ -86,7 +86,7 @@ const AboutSection: React.FC = () => {
 
           <div className="about-description">
             <h3 className={`typewriter-text ${isTyping ? "typing" : ""}`}>
-              Web Developer & Web Designer
+              Web Developer
             </h3>
 
             <p>
@@ -94,7 +94,7 @@ const AboutSection: React.FC = () => {
               started around 2021, when I discovered that I could create a
               website with just a few lines of code using HTML, since then I've
               been on a journey to learn more about the world of web development
-              and other emerging technologies. 
+              and other emerging technologies.
               {/* I'm a passionate developer with expertise in building modern web applications.
               My journey in tech began with a curiosity about how things work, which evolved into
               a career creating elegant solutions to complex problems. */}
