@@ -94,14 +94,14 @@ const AboutSection: React.FC = () => {
               started around 2021, when I discovered that I could create a
               website with just a few lines of code using HTML, since then I've
               been on a journey to learn more about the world of web development
-              and other emerging technologies.
+              and other emerging technologies. 
               {/* I'm a passionate developer with expertise in building modern web applications.
               My journey in tech began with a curiosity about how things work, which evolved into
               a career creating elegant solutions to complex problems. */}
             </p>
 
             <p>
-              I'm also a student of Computer Science at the Federal University
+              I'm also a student of Computer Science at tshe Federal University
               of Agriculture, Abeokuta. I'm a passionate developer with
               expertise in building modern web applications, With a focus on
               React, TypeScript and css. I strive to create user-friendly

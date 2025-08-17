@@ -1,6 +1,6 @@
 import "./HeadContent.css";
 // import Squares from "./bits/Squares";
-import DecryptedText from "./bits/DecryptedText";
+// import DecryptedText from "./bits/DecryptedText";
 import CtaButton from "./bits/CtaButton";
 import Orb from "./bits/Orb";
 import LightRays from "./bits/LightRays";
@@ -52,14 +52,13 @@ const HeadContent = () => {
       </div>
 
       <div className="intro-text">
-        <h1 style={{ marginTop: "4rem" }}>
-          <DecryptedText
-            text="Welcome to My Personal Portfolio"
-            speed={300}
-            animateOn="view"
-            revealDirection="center"
-          />
-        </h1>
+        <h1 style={{ marginTop: "4rem" }}>Welcome to My Personal Portfolio</h1>
+        {/* <h1
+          style={{ marginTop: "4rem" }}
+          className="text-5xl text-red-500 lg:text-7xl font-light hero-font leading-tight mb-6"
+        >
+          Welcome 👋
+        </h1> */}
         <p>
           Hi there, I'm Peters Joshua, I'm a
           <span className="highlight"> Front-End Developer</span> dedicated to
