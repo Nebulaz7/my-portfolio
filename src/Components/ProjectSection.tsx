@@ -22,35 +22,7 @@ const ProjectSection = () => {
 
   const projects: Project[] = [
     {
-      id: 1,
-      title: "DishPal AI",
-      description:
-        "AI-powered recipe generator that creates dishes from your available ingredients. Features recipe saving and favorites.",
-      technologies: ["React", "JavaScript", "OpenAI API", "CSS"],
-      imageUrl: DishPal,
-      githubUrl: "https://github.com/Nebulaz7/dishpal-ai",
-      liveUrl: "https://dishpal-ai.vercel.app/",
-    },
-    {
-      id: 2,
-      title: "Digital Wallet App",
-      description: "Neb-x",
-      technologies: ["HTMl", "CSS", "Javascript", "Bootstrap"],
-      imageUrl: NebX,
-      githubUrl: "https://github.com/Nebulaz7/neb-x",
-      liveUrl: "https://nebulaz7.github.io/neb-x",
-    },
-    {
-      id: 3,
-      title: "Neb AI",
-      description: "An AI-Powered chatbot, that is always helpful.",
-      technologies: ["React", "TypeScript", "Gemini Ai API", "Tailwind"],
-      imageUrl: NebAI,
-      githubUrl: "https://github.com/Nebulaz7/chatbot",
-      liveUrl: "https://chatbot-eta-lime.vercel.app/",
-    },
-    {
-      id: 4,
+      id: 5,
       title: "Rave",
       description: `Rave is a collaborative AI-powered roadmap planning tool designed for developers, teams, and innovators.`,
       technologies: [
@@ -66,7 +38,7 @@ const ProjectSection = () => {
       liveUrl: "https://rave-ai.vercel.app/",
     },
     {
-      id: 5,
+      id: 4,
       title: "Veil",
       description:
         "Veil is a real-time anonymous Q&A platform designed for events, livestreams, and interactive sessions.",
@@ -84,6 +56,35 @@ const ProjectSection = () => {
       imageUrl: Veil,
       githubUrl: "https://github.com/Nebulaz7/veil",
       liveUrl: "https://veil-io.vercel.app/",
+    },
+    {
+      id: 3,
+      title: "DishPal AI",
+      description:
+        "AI-powered recipe generator that creates dishes from your available ingredients. Features recipe saving and favorites.",
+      technologies: ["React", "JavaScript", "OpenAI API", "CSS"],
+      imageUrl: DishPal,
+      githubUrl: "https://github.com/Nebulaz7/dishpal-ai",
+      liveUrl: "https://dishpal-ai.vercel.app/",
+    },
+    {
+      id: 2,
+      title: "Neb AI",
+      description: "An AI-Powered chatbot, that is always helpful.",
+      technologies: ["React", "TypeScript", "Gemini Ai API", "Tailwind"],
+      imageUrl: NebAI,
+      githubUrl: "https://github.com/Nebulaz7/chatbot",
+      liveUrl: "https://chatbot-eta-lime.vercel.app/",
+    },
+
+    {
+      id: 1,
+      title: "Digital Wallet App",
+      description: "Neb-x",
+      technologies: ["HTML", "CSS", "Javascript", "Bootstrap"],
+      imageUrl: NebX,
+      githubUrl: "https://github.com/Nebulaz7/neb-x",
+      liveUrl: "https://nebulaz7.github.io/neb-x",
     },
   ];
 
