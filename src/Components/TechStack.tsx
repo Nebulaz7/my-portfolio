@@ -104,10 +104,10 @@ const TechStack = () => {
       color: "#3776AB",
     },
     {
-      id: 16,
-      name: "TensorFlow.js",
-      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
-      color: "#FF6F00",
+      id: 17,
+      name: "Solidity",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg",
+      color: "#AA6746",
     },
   ];
 

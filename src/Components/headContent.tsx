@@ -64,8 +64,8 @@ const HeadContent = () => {
         </h1> */}
         <p>
           I'm <span className="highlight"> Peters Joshua </span>, I'm a
-          <span> Front-End Engineer</span> dedicated to crafting beautiful and
-          functional web experiences.
+          <span> Front-End Engineer & Blockchain developer</span> dedicated to
+          crafting beautiful and functional web experiences.
         </p>
         <div className="cta-button">
           <CtaButton text="Get to know me" onClick={scrollToAbout} />

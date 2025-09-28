@@ -5,6 +5,7 @@ import NebX from "../assets/neb-x-img.png";
 import NebAI from "../assets/neb-ai-img.png";
 import Rave from "../assets/Rave.png";
 import Veil from "../assets/Veil.png";
+import GenZjs from "../assets/genzjs.png";
 
 interface Project {
   id: number;
@@ -21,6 +22,16 @@ const ProjectSection = () => {
   const projectRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   const projects: Project[] = [
+    {
+      id: 6,
+      title: "GenZ.js",
+      description: `About
+A JavaScript library that lets you add interactivity to HTML without writing JavaScript code.`,
+      technologies: ["Javascript", "Next.js", "TypeScript"],
+      imageUrl: GenZjs,
+      githubUrl: "https://github.com/Nebulaz7/gen-z.js",
+      liveUrl: "https://genz-js.vercel.app/",
+    },
     {
       id: 5,
       title: "Rave",

@@ -52,7 +52,7 @@ const AboutSection: React.FC = () => {
             setIsContentVisible(true);
             setTimeout(() => {
               setIsTyping(true);
-            }, 500);
+            }, 1000);
           }, 500);
         }
       }
@@ -86,7 +86,7 @@ const AboutSection: React.FC = () => {
 
           <div className="about-description">
             <h3 className={`typewriter-text ${isTyping ? "typing" : ""}`}>
-              Web Developer
+              Web3 Developer
             </h3>
 
             <p>
