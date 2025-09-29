@@ -13,6 +13,7 @@
     "@vercel/analytics": "^1.5.0",
     "bootstrap": "^5.3.5",
     "framer-motion": "^12.9.4",
+    "lucide-react": "^0.544.0",
     "ogl": "^1.0.11",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

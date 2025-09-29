@@ -25,8 +25,7 @@ const ProjectSection = () => {
     {
       id: 6,
       title: "GenZ.js",
-      description: `About
-A JavaScript library that lets you add interactivity to HTML without writing JavaScript code.`,
+      description: `A JavaScript library that lets you add interactivity to HTML without writing JavaScript code.`,
       technologies: ["Javascript", "Next.js", "TypeScript"],
       imageUrl: GenZjs,
       githubUrl: "https://github.com/Nebulaz7/gen-z.js",
